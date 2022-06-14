@@ -48,8 +48,10 @@ int main(int argc, char **argv){
 
   bzero(buffer, 1024);
   strcpy(buffer, "Welcome to the UDP Server.");
-  sendto(sockfd, buffer, 1024, 0, (struct sockaddr*)&client_addr, sizeof(client_addr));
-  printf("[+]Data send: %s\n", buffer);
+  while(true){
+    sendto(sockfd, buffer, 1024, 0, (struct sockaddr*)&client_addr, sizeof(client_addr));
+    printf("[+]Data send: %s\n", buffer);
+  }
 
   return 0;
 }
