@@ -10,7 +10,7 @@ node index.mjs
 Compile 
 $ gcc server.c -o server
 Run
-$ ./server 4455
+$ ./server 5500
 
 UDP Client
 
