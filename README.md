@@ -1,4 +1,4 @@
-# UDPServer
+# UDP
 
 # NodeJs UDP server
 
@@ -12,12 +12,12 @@ $ gcc udpServer.c -o server
 Run
 $ ./server 5500
 
-UDP Client
+#  UDP Client
 
 # Run Client: Send udp datagram packages to the server through 
 nc -u 127.0.0.1 5500 
 
-TCP Client
+#  TCP
 
 # NodeJs TCP server
 
@@ -26,3 +26,13 @@ node tcpServer.mjs
 
 # Run Client
 nc 127.0.0.1 8800 
+
+# HTTP Server
+
+run HTTPServer.js
+
+Assume started on port 57765
+
+Open http://localhost:57565
+
+returns OK
